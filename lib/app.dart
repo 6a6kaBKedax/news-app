@@ -14,7 +14,7 @@ class App extends StatelessWidget {
         RepositoryProvider(create: (context) => NewsRepository(NewsRemoteRetrofitImplementation())),
         BlocProvider(create: (context) => NewsCubit(NewsCubitDto(context))),
       ],
-      child: MaterialApp(
+      child: const MaterialApp(
         home: MainScreen(),
         debugShowCheckedModeBanner: false,
       ),

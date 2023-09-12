@@ -1,5 +1,4 @@
 import 'package:core/core.dart';
-import 'package:core/src/datasources/interfaces/news.dart';
 
 class NewsRepository {
   final NewsDataSource dataSource;

@@ -1,4 +1,3 @@
-import 'package:core/src/datasources/interfaces/news.dart';
 import 'package:retrofit/retrofit.dart';
 import 'package:dio/dio.dart';
 import 'package:core/core.dart';

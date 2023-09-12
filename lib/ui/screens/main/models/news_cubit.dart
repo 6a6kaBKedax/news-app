@@ -1,4 +1,3 @@
-import 'package:bloc/bloc.dart';
 import 'package:core/core.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -27,7 +26,6 @@ class NewsCubit extends Cubit<NewsState> {
 
   Future search(String query, int page, PagingController<int, NewsModel> controller) async {
     try {
-      //emit(state.copyWith(state: NewsStateEnum.loading));
       final response = await dto.repository.getEverything(
         q: query,
         apiKey: 'a8294614d963404abb1d90f12e859131',
